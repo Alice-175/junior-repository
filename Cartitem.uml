@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>thebook2.pojo.Cartitem</OriginalElement>
+  <nodes>
+    <node x="889.1356235162684" y="767.0">thebook2.web.CartServlet</node>
+    <node x="560.1347559698364" y="23.0">thebook2.pojo.Book</node>
+    <node x="421.1347559698364" y="436.5">thebook2.web.BaseServlet</node>
+    <node x="0.0" y="436.5">thebook2.dao.UserService</node>
+    <node x="712.4804374389049" y="767.0">thebook2.web.OrderServlet</node>
+    <node x="985.1356235162684" y="424.0">thebook2.pojo.Cart</node>
+    <node x="186.63475596983648" y="767.0">thebook2.web.BookServlet</node>
+    <node x="769.3847559698364" y="0.0">thebook2.pojo.OrderItem</node>
+    <node x="728.1347559698364" y="436.5">thebook2.dao.OrderItemService</node>
+    <node x="569.1347559698364" y="436.5">thebook2.dao.BookService</node>
+    <node x="203.13475596983642" y="355.0">thebook2.pojo.Page</node>
+    <node x="1021.4680893031698" y="23.0">thebook2.pojo.Cartitem</node>
+    <node x="39.63475596983653" y="767.0">thebook2.web.UserServlet</node>
+    <node x="420.0637707722381" y="767.0">thebook2.web.ClientBookServlet</node>
+    <node x="71.80975596983649" y="46.0">thebook2.pojo.User</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="thebook2.web.BookServlet" target="thebook2.dao.BookService">
+      <point x="36.28571428571411" y="-14.5" />
+      <point x="286.4204702555506" y="697.0" />
+      <point x="577.0722559698364" y="697.0" />
+      <point x="-55.5625" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.UserServlet" target="thebook2.pojo.User">
+      <point x="0.0" y="-14.5" />
+      <point x="103.13475596983653" y="737.0" />
+      <point x="137.49999999999994" y="737.0" />
+      <point x="137.49999999999994" y="335.0" />
+      <point x="131.39308930316975" y="335.0" />
+      <point x="-11.916666666666742" y="61.5" />
+    </edge>
+    <edge source="thebook2.web.CartServlet" target="thebook2.pojo.Cart">
+      <point x="23.090909090909122" y="-14.5" />
+      <point x="975.7265326071775" y="717.0" />
+      <point x="1098.6356235162684" y="717.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="thebook2.web.CartServlet" target="thebook2.dao.BookService">
+      <point x="-46.18181818181819" y="-14.5" />
+      <point x="906.4538053344502" y="617.0" />
+      <point x="672.3222559698364" y="617.0" />
+      <point x="39.6875" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.CartServlet" target="thebook2.pojo.Cartitem">
+      <point x="57.72727272727275" y="-14.5" />
+      <point x="1010.3628962435412" y="747.0" />
+      <point x="1233.6356235162684" y="747.0" />
+      <point x="1233.6356235162684" y="315.0" />
+      <point x="1179.1347559698365" y="315.0" />
+      <point x="71.66666666666674" y="84.5" />
+    </edge>
+    <edge source="thebook2.web.OrderServlet" target="thebook2.pojo.Book">
+      <point x="-12.181818181818187" y="-14.5" />
+      <point x="767.2986192570868" y="637.0" />
+      <point x="717.6347559698364" y="637.0" />
+      <point x="717.6347559698364" y="255.0" />
+      <point x="659.8222559698364" y="255.0" />
+      <point x="27.1875" y="84.5" />
+    </edge>
+    <edge source="thebook2.web.ClientBookServlet" target="thebook2.pojo.Page">
+      <point x="-59.5" y="-14.5" />
+      <point x="445.5637707722381" y="657.0" />
+      <point x="365.8847559698363" y="657.0" />
+      <point x="69.74999999999989" y="96.0" />
+    </edge>
+    <edge source="thebook2.web.OrderServlet" target="thebook2.dao.OrderItemService">
+      <point x="0.0" y="-14.5" />
+      <point x="779.4804374389049" y="657.0" />
+      <point x="796.051422636503" y="657.0" />
+      <point x="-13.583333333333314" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.ClientBookServlet" target="thebook2.pojo.OrderItem">
+      <point x="8.5" y="-14.5" />
+      <point x="513.5637707722381" y="687.0" />
+      <point x="558.6347559698364" y="687.0" />
+      <point x="558.6347559698364" y="325.0" />
+      <point x="785.5847559698364" y="325.0" />
+      <point x="-64.80000000000001" y="107.5" />
+    </edge>
+    <edge source="thebook2.web.CartServlet" target="thebook2.web.BaseServlet">
+      <point x="-57.72727272727275" y="-14.5" />
+      <point x="894.9083507889957" y="627.0" />
+      <point x="535.4347559698365" y="627.0" />
+      <point x="50.80000000000007" y="14.5" />
+    </edge>
+    <edge source="thebook2.dao.OrderItemService" target="thebook2.pojo.OrderItem">
+      <point x="-40.75" y="-14.5" />
+      <point x="768.8847559698364" y="335.0" />
+      <point x="817.9847559698364" y="335.0" />
+      <point x="-32.39999999999998" y="107.5" />
+    </edge>
+    <edge source="thebook2.web.OrderServlet" target="thebook2.pojo.Cart">
+      <point x="60.90909090909088" y="-14.5" />
+      <point x="840.3895283479958" y="707.0" />
+      <point x="1022.9689568496017" y="707.0" />
+      <point x="-75.66666666666667" y="27.0" />
+    </edge>
+    <edge source="thebook2.web.BookServlet" target="thebook2.pojo.Book">
+      <point x="-36.285714285714334" y="-14.5" />
+      <point x="213.84904168412214" y="657.0" />
+      <point x="188.29547025555064" y="657.0" />
+      <point x="188.29547025555064" y="295.0" />
+      <point x="587.3222559698364" y="295.0" />
+      <point x="-45.3125" y="84.5" />
+    </edge>
+    <edge source="thebook2.web.ClientBookServlet" target="thebook2.dao.BookService">
+      <point x="25.5" y="-14.5" />
+      <point x="530.5637707722381" y="717.0" />
+      <point x="608.8222559698364" y="717.0" />
+      <point x="-23.8125" y="14.5" />
+    </edge>
+    <edge source="thebook2.pojo.Cart" target="thebook2.pojo.Cartitem">
+      <point x="75.66666666666669" y="-27.0" />
+      <point x="1174.3022901829352" y="335.0" />
+      <point x="1121.801422636503" y="335.0" />
+      <point x="14.333333333333343" y="84.5" />
+    </edge>
+    <edge source="thebook2.web.BookServlet" target="thebook2.web.BaseServlet">
+      <point x="18.142857142856997" y="-14.5" />
+      <point x="268.2776131126935" y="687.0" />
+      <point x="459.23475596983644" y="687.0" />
+      <point x="-25.399999999999977" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.OrderServlet" target="thebook2.pojo.User">
+      <point x="-24.363636363636374" y="-14.5" />
+      <point x="755.1168010752685" y="647.0" />
+      <point x="706.6347559698364" y="647.0" />
+      <point x="706.6347559698364" y="265.0" />
+      <point x="202.89308930316975" y="265.0" />
+      <point x="59.58333333333326" y="61.5" />
+    </edge>
+    <edge source="thebook2.web.ClientBookServlet" target="thebook2.pojo.Book">
+      <point x="-25.5" y="-14.5" />
+      <point x="479.5637707722381" y="637.0" />
+      <point x="410.6347559698364" y="637.0" />
+      <point x="410.6347559698364" y="305.0" />
+      <point x="605.4472559698364" y="305.0" />
+      <point x="-27.1875" y="84.5" />
+    </edge>
+    <edge source="thebook2.web.ClientBookServlet" target="thebook2.dao.OrderItemService">
+      <point x="76.5" y="-14.5" />
+      <point x="581.5637707722381" y="747.0" />
+      <point x="768.8847559698364" y="747.0" />
+      <point x="-40.75" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.OrderServlet" target="thebook2.pojo.Cartitem">
+      <point x="48.72727272727275" y="-14.5" />
+      <point x="828.2077101661777" y="697.0" />
+      <point x="934.6347559698364" y="697.0" />
+      <point x="934.6347559698364" y="325.0" />
+      <point x="1035.801422636503" y="325.0" />
+      <point x="-71.66666666666669" y="84.5" />
+    </edge>
+    <edge source="thebook2.web.CartServlet" target="thebook2.dao.OrderItemService">
+      <point x="-23.090909090909122" y="-14.5" />
+      <point x="929.5447144253593" y="597.0" />
+      <point x="850.3847559698364" y="597.0" />
+      <point x="40.75" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.UserServlet" target="thebook2.dao.UserService">
+      <point x="-50.799999999999955" y="-14.5" />
+      <point x="52.33475596983658" y="747.0" />
+      <point x="31.75" y="747.0" />
+      <point x="-31.75" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.OrderServlet" target="thebook2.pojo.OrderItem">
+      <point x="24.363636363636374" y="-14.5" />
+      <point x="803.8440738025413" y="677.0" />
+      <point x="901.6347559698364" y="677.0" />
+      <point x="901.6347559698364" y="335.0" />
+      <point x="882.7847559698364" y="335.0" />
+      <point x="32.400000000000034" y="107.5" />
+    </edge>
+    <edge source="thebook2.dao.BookService" target="thebook2.pojo.Book">
+      <point x="-31.75" y="-14.5" />
+      <point x="600.8847559698364" y="315.0" />
+      <point x="623.5722559698364" y="315.0" />
+      <point x="-9.0625" y="84.5" />
+    </edge>
+    <edge source="thebook2.web.UserServlet" target="thebook2.web.BaseServlet">
+      <point x="50.799999999999955" y="-14.5" />
+      <point x="153.9347559698365" y="677.0" />
+      <point x="433.83475596983646" y="677.0" />
+      <point x="-50.799999999999955" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.ClientBookServlet" target="thebook2.web.BaseServlet">
+      <point x="-8.5" y="-14.5" />
+      <point x="496.5637707722381" y="687.0" />
+      <point x="484.6347559698364" y="687.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.CartServlet" target="thebook2.pojo.Book">
+      <point x="11.545454545454561" y="-14.5" />
+      <point x="964.1810780617229" y="567.0" />
+      <point x="945.6347559698364" y="567.0" />
+      <point x="945.6347559698364" y="235.0" />
+      <point x="696.0722559698364" y="235.0" />
+      <point x="63.4375" y="84.5" />
+    </edge>
+    <edge source="thebook2.web.ClientBookServlet" target="thebook2.pojo.User">
+      <point x="-42.5" y="-14.5" />
+      <point x="462.5637707722381" y="647.0" />
+      <point x="399.6347559698364" y="647.0" />
+      <point x="399.6347559698364" y="275.0" />
+      <point x="179.0597559698365" y="275.0" />
+      <point x="35.75" y="61.5" />
+    </edge>
+    <edge source="thebook2.web.OrderServlet" target="thebook2.dao.BookService">
+      <point x="-36.54545454545456" y="-14.5" />
+      <point x="742.9349828934503" y="657.0" />
+      <point x="656.4472559698364" y="657.0" />
+      <point x="23.8125" y="14.5" />
+    </edge>
+    <edge source="thebook2.dao.UserService" target="thebook2.pojo.User">
+      <point x="-31.75" y="-14.5" />
+      <point x="31.75" y="335.0" />
+      <point x="83.72642263650323" y="335.0" />
+      <point x="-59.58333333333326" y="61.5" />
+    </edge>
+    <edge source="thebook2.web.OrderServlet" target="thebook2.web.BaseServlet">
+      <point x="-60.909090909090935" y="-14.5" />
+      <point x="718.571346529814" y="677.0" />
+      <point x="510.0347559698364" y="677.0" />
+      <point x="25.399999999999977" y="14.5" />
+    </edge>
+    <edge source="thebook2.web.BookServlet" target="thebook2.pojo.Page">
+      <point x="-1.1368683772161603E-13" y="-14.5" />
+      <point x="250.13475596983636" y="667.0" />
+      <point x="272.8847559698364" y="667.0" />
+      <point x="-23.25" y="96.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="684.8730158730154" y="458.57142857142856" />
+  <SelectedNodes>
+    <node>thebook2.pojo.User</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
