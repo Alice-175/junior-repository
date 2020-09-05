@@ -1,5 +1,6 @@
 package thebook2.web;
 
+import com.google.gson.Gson;
 import thebook2.dao.UserService;
 import thebook2.pojo.User;
 import thebook2.utils.JdbcUtil;
@@ -8,8 +9,32 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
+import java.util.HashMap;
+import java.util.Map;
 
 public class UserServlet extends BaseServlet {
+    protected void existsUsername(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String username=req.getParameter("username");
+        UserService userService=new UserService();
+        JdbcUtil dbutil=new JdbcUtil();
+        Connection con;
+        try {
+            con=dbutil.getCon();
+            User u=userService.existsUsername(con, username);
+            Map<String,String> map=new HashMap<>();
+            if(u!= null){
+                map.put("existsUsername","t");
+            }else{
+                map.put("existsUsername","f");
+            }
+            Gson gson=new Gson();
+            //转换成json
+            String json=gson.toJson(map);
+            resp.getWriter().write(json);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     protected void logout(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getSession().invalidate();
         resp.sendRedirect(req.getContextPath());

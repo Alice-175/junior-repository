@@ -5,6 +5,21 @@
     <meta charset="UTF-8">
     <title>用户登录页面</title>
     <%@include file="/pages/common/head.jsp"%>
+    <script type="text/javascript">
+        $(function () {
+            $("#username").blur(function () {
+                var username=this.value;
+                $.getJSON("http://localhost:8080/book/userServlet","action=existsUsername&username="+username,function (data) {
+                    if (data.existsUsername=="t") {
+                        $("span.errorMsg").text("用户名存在！");
+                    } else {
+                        $("span.errorMsg").text("用户名不存在！");
+                    }
+                });
+
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -31,7 +46,7 @@
                         <input type="hidden" name="action" value="login">
                         <label>账号：</label>
                         <input class="itxt" type="text" placeholder="请输入用户名"
-                               autocomplete="off" tabindex="1" name="username" />
+                               autocomplete="off" tabindex="1" name="username" id="username"/>
                         <br />
                         <br />
                         <label>密码：</label>
