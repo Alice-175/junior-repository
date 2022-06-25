@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-<Connector port="2727" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8445" />
+<Connector port="8004" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8445" />
 
 
     <servlet>
